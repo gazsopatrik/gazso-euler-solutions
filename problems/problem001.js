@@ -4,17 +4,25 @@
 // Solution:
 
 function multiples(number) {
-
+  //We need to create a sum variable to calculate the sum
   let sum = 0; 
   
   for (let i = 0; i < number; i++) 
+    
     {
+      //We need to check if i is dividable by 3 and 5
       if (i % 3 === 0 || i % 5 === 0) 
-      {
-        sum += i;
-      }
+      
+        {
+          //If it is, then we add it to the sum. If not, then i++
+          sum += i;
+      
+        }
+    
     }
+  
   return(sum);
+
 }
 
 multiples(1000);
