@@ -10,7 +10,7 @@ function multiples(number) {
   for (let i = 0; i < number; i++) 
     
     {
-      //We need to check if i is dividable by 3 and 5
+      //We need to check if i is dividable by 3 or 5
       if (i % 3 === 0 || i % 5 === 0) 
       
         {
