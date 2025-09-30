@@ -31,5 +31,8 @@ Project Euler is a collection of challenging mathematical and algorithmic proble
 | #1      | Multiples of 3 and 5   | ✅ Done         |
 | #2      | Even Fibonacci numbers | ✅ Done         |
 | #3      | Largest prime factor   | ✅ Done         |
+| #4      | Largest Palindrome Product   | ✅ Done         |
+| #5      | Smallest Multiple   | ✅ Done         |
+| #6      | Sum Square difference   | ✅ Done         |
 | ...     | ...                    | 🚧 In progress |
 
