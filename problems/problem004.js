@@ -4,13 +4,13 @@
 
 //Solution:
 
-function findLargestPalindromeProduct = (n) => {
+function findLargestPalindromeProduct(n) {
     // The biggest n-digit number (e.g., 99 for 2 digits)
     const highestFactor = 10 ** n - 1;
     // The smallest n-digit number (e.g., 10 for 2 digits)
     const lowestFactor = 10 ** (n - 1);
 
-    // We'll store the largest palindrome we find here
+    // We'll store the largest palindrome we find
     let highestPalindrome = 0;
 
     // Loop from big to small so we find bigger products first
@@ -19,14 +19,14 @@ function findLargestPalindromeProduct = (n) => {
         for (let secondFactor = firstFactor; secondFactor >= lowestFactor; secondFactor--) {
             const product = firstFactor * secondFactor;
 
-            // If this product is already smaller than what we've found, no need to keep checking
+            // If product is smaller, stop checking
             if (product <= highestPalindrome) break;
 
-            // Turn the number into a string so we can see if it's a palindrome
+            // number => string
             const productStr = String(product);
             const reversedStr = [...productStr].reverse().join('');
 
-            // If it reads the same forward and backward, update the highestPalindrome
+            // check if its palindrome
             if (productStr === reversedStr) {
                 highestPalindrome = product;
             }
